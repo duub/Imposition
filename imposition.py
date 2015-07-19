@@ -30,6 +30,8 @@ try:
         print "Ordre: " + ordre
     else:
         print "No és divisible entre quatre!" 
+        nump = str(4-(int(pagines) % 4))
+        print "Cal afegir "+nump+" pàgines"
 except:
     print "No és un número"
     print "Unexpected error:", sys.exc_info()[0]
